@@ -31,6 +31,13 @@ $(function(){
       }
     });
 
+    /**
+     * 雪を降らせる
+     * こちらのコードを参考にさせていただきました。
+     * @see https://rui-log.com/css_make-it-snow/
+     */
+    $('body').before("<div class='snow'>●</div> ");
+
     sendResponse('Done');
   });
 });
