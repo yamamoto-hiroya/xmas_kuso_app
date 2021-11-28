@@ -15,7 +15,21 @@ $(function(){
     }
 
     /** ----- main ----- **/
-    console.log("対象の要素がなかったため何もしません。");
+    /**
+     * 画面上の全ての要素をループで回す（ちょっと重いかも）
+     * 背景色を緑にしてツリーっぽくする
+     * 文字色を各種オーナメントを模して黄色、赤、白にする
+     */
+    $.each($("*"), function(index, element){
+      $(element).css('background-color', '#0B7B48');
+      if(index%3 === 0) {
+        $(element).css('color', '#B51802');
+      } else if(index%3 === 1){
+        $(element).css('color', '#FFE33A');
+      } else if(index%3 === 2){
+        $(element).css('color', '#FFFFFF');
+      }
+    });
 
     sendResponse('Done');
   });

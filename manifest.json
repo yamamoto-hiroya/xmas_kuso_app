@@ -3,7 +3,7 @@
     "name": "xmas_kuso_app",
     "version": "1.0.0",
  
-    "description": "画面上のxという文字をクリスマス仕様にします",
+    "description": "今見ているweb画面をクリスマス仕様にします",
 
     "icons": {
         "16": "icons/christmas_tree_advent_calender.png",
